@@ -6,11 +6,11 @@
 
 html {
     font-size: 62.5%;
+    font-family: "Roboto";
 }
 
 body {
     font-size: 1.6rem;
-    font-family: 'Roboto', sans-serif;
 }
 
 .nav {
@@ -30,6 +30,8 @@ body {
 
 .nav__search input {
     height: 2.8rem;
+    width: 215px;
+    padding: 7px;
 }
 
 .nav__search input::placeholder {
@@ -137,6 +139,29 @@ body {
     text-align: center;
     font-size: 1.4rem;
     font-weight: 300;
+}
+
+.sections {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: center;
+    border-top: 1px solid #dbdbdb;
+}
+
+.sections > div {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #8e8e8e;
+    padding: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sections > div:hover {
+    border-top: 1px solid #262626;
 }
 
 .posts {
