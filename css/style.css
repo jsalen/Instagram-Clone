@@ -73,7 +73,8 @@ body {
 
 .profile-details {
     grid-column: 2 / 4;
-    justify-self: center;
+    justify-items: start;
+    text-align: left;
 }
 
 .profile-header span {
