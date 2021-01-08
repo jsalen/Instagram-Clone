@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    background-color: #fff;
+    display: block;
+    position: fixed;
+    height: 5.4rem;
+    top: 0;
+    width: 100%;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.nav__search input {
+    height: 2.8rem;
+}
+
+.nav__search input::placeholder {
+    text-align: center;
+}
+
+.nav__search--icon {
+    position: absolute;
+    display: flex;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav li {
+    padding-left: 1em;
+    font-size: 2rem;
+}
