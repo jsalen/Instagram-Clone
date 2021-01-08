@@ -25,6 +25,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     border-bottom: 1px solid #dbdbdb;
+    z-index: 1;
 }
 
 .nav__search input {
@@ -60,6 +61,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 280px);
     justify-content: center;
+    z-index: 0;
 }
 
 .profile-picture {
@@ -116,14 +118,15 @@ body {
 }
 
 .featured-stories {
+    grid-column: 1 / -1;
     padding-top: 3em;
     padding-bottom: 3em;
-    grid-column: 1 / -1;    
     display: flex;
     flex-direction: row;
 }
 
 .featured-stories img {
+    cursor: pointer;
     width: 87px;
     border-radius: 50%;
     border: 1px solid #fff;
@@ -134,4 +137,59 @@ body {
     text-align: center;
     font-size: 1.4rem;
     font-weight: 300;
+}
+
+.posts {
+    width: 935px;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.post {
+    width: 293px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    padding-bottom: 1em;
+}
+
+.post-img {
+    margin: 0;
+}
+.post-img img {
+    width: 293px;
+    height: 293px;
+    vertical-align: top;
+}
+
+.post .post-overlay {
+    background: rgba(0,0,0,0.4);
+    height: 293px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.post:hover .post-overlay {
+    display: flex;
+}
+
+.post .post-likes, .post .post-comments {
+    width: 80px;
+    display: inline;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.post .comments {
+    margin-left: 1em;
 }
