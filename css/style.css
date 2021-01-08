@@ -61,7 +61,7 @@ body {
     margin-top: 5.4rem;
     padding-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(3, 280px);
+    grid-template-columns: repeat(3, 311px);
     justify-content: center;
     z-index: 0;
 }
@@ -165,7 +165,6 @@ body {
 }
 
 .posts {
-    width: 935px;
     grid-column: 1 / 4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -178,6 +177,7 @@ body {
     position: relative;
     display: block;
     padding-bottom: 1em;
+    justify-self: center;
 }
 
 .post-img {
