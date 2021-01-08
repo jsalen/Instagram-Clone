@@ -52,3 +52,61 @@ body {
     padding-left: 1em;
     font-size: 2rem;
 }
+
+.container {
+    background-color: #fafafa;
+    margin-top: 5.4rem;
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    justify-content: center;
+}
+
+.profile-picture {
+    grid-column: 1 / span 1;
+    justify-self: center;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+}
+
+.profile-details {
+    grid-column: 2 / 4;
+    justify-self: center;
+}
+
+.profile-header span {
+    padding-right: 1em;
+}
+.profile-header .profile-header__username {
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
+.profile-header input {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 5px 9px;
+}
+
+.profile-stats {
+    padding: 1em 0;
+    font-weight: 300;
+    
+}
+
+.profile-stats .number {
+    font-weight: 700;
+}
+
+.profile-description .user-name {
+    font-weight: 700;
+}
+
+.profile-description .description {
+    padding-top: 0.5em;
+    font-weight: 300;
+}

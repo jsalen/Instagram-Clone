@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Clone</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -31,22 +31,25 @@
         </nav>
         <main class="container">
             <div class="profile-picture">
-                <img src="" alt="">
+                <img src="./images/profile-pic.jpg" alt="">
             </div>
             <div class="profile-details">
                 <div class="profile-header">
-                    <p>userName</p>
-                    <button type="submit" vlaue="Editar perfil"></button>
-                    <i class="fas fa-cog"></i>
+                    <span class="profile-header__username">joeysalen</span>
+                    <span><input type="submit" value="Editar perfil"></span>
+                    <span><i class="fas fa-cog"></i></span>
+                    
                 </div>
                 <div class="profile-stats">
-                    <p>161 publicaciones</p>
-                    <p>320 seguidores</p>
-                    <p>560 seguidos</p>
+                    <p>
+                        <span><span class="number">164</span> publicaciones</span>
+                        <span><span class="number">320</span> seguidores</span>
+                        <span><span class="number">468</span> seguidos</span>
+                    </p>
                 </div>
                 <div class="profile-description">
-                    <p>Joseph Salen</p>
-                    <p>One day at a time 🦾</p>
+                    <p class="user-name">Joseph Salen</p>
+                    <p class="description">One day at a time 🦾</p>
                 </div>
             </div>
             <div class="featured-stories">
@@ -63,7 +66,7 @@
                     <p>Historia</p>
                 </div>
             </div>
-            <section class="posts">
+            <!-- <section class="posts">
                 <a href="" class="post">
                     <figure class="post-img">
                         <img src="" alt="">
@@ -130,7 +133,7 @@
                         </p>
                     </span>
                 </a>
-            </section>
+            </section> -->
         </main>
     </header>
 </body>
