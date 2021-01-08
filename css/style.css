@@ -94,11 +94,14 @@ body {
 }
 
 .profile-stats {
-    padding: 1em 0;
+    padding: 1.6em 0;
     font-weight: 300;
     
 }
 
+.profile-stats p > span {
+    padding-right: 1.5em;
+}
 .profile-stats .number {
     font-weight: 700;
 }
@@ -108,6 +111,27 @@ body {
 }
 
 .profile-description .description {
-    padding-top: 0.5em;
+    padding-top: 0.2em;
+    font-weight: 300;
+}
+
+.featured-stories {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    grid-column: 1 / -1;    
+    display: flex;
+    flex-direction: row;
+}
+
+.featured-stories img {
+    width: 87px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.featured-stories > div {
+    padding: 0 1.8em;
+    text-align: center;
+    font-size: 1.4rem;
     font-weight: 300;
 }
